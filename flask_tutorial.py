@@ -52,6 +52,13 @@ def simple_pizza_results():
     crust = request.args.get("crust")
     return f"<h3>A {crust}-crust {pizza_flavor} pizza has been ordered!</h3>"
 
+# post example
+# @app.route('/results', methods=['POST'])
+# def simple_pizza_results():
+#     pizza_flavor = request.form.get("pizza_flavor")
+#     crust = request.form.get("crust")
+#     return f"<h3>A {crust}-crust {pizza_flavor} pizza has been ordered!</h3>"
+
 # turn on server
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
